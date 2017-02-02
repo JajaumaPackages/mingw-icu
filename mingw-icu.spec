@@ -5,7 +5,7 @@
 
 Name:           mingw-icu
 Version:        57.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        MinGW compilation of International Components for Unicode Tools
 
 License:        MIT and UCD and Public Domain
@@ -212,6 +212,9 @@ rm -fr $RPM_BUILD_ROOT%{mingw64_libdir}/icu/pkgdata.inc
 
 
 %changelog
+* Thu Feb 02 2017 Jajauma's Packages <jajauma@yandex.ru> - 57.1-2
+- Rebuild with GCC 5.4.0
+
 * Mon Oct 24 2016 Kalev Lember <klember@redhat.com> - 57.1-1
 - Update to 57.1
 - Don't set group tags
